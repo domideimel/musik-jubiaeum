@@ -13,23 +13,18 @@ module.exports = function (/* ctx */) {
     supportTS: false,
 
     // https://quasar.dev/quasar-cli/prefetch-feature
-    // preFetch: true,
+    preFetch: true,
 
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     // https://quasar.dev/quasar-cli/boot-files
-    boot: [
-
-    ],
+    boot: [],
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
-    css: [
-      'app.sass'
-    ],
+    css: ['app.sass'],
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
-    extras: [
-      // 'ionicons-v4',
+    extras: [// 'ionicons-v4',
       // 'mdi-v5',
       // 'fontawesome-v5',
       // 'eva-icons',
@@ -115,33 +110,27 @@ module.exports = function (/* ctx */) {
         orientation: 'portrait',
         background_color: '#ffffff',
         theme_color: '#027be3',
-        icons: [
-          {
-            src: 'icons/icon-128x128.png',
-            sizes: '128x128',
-            type: 'image/png'
-          },
-          {
-            src: 'icons/icon-192x192.png',
-            sizes: '192x192',
-            type: 'image/png'
-          },
-          {
-            src: 'icons/icon-256x256.png',
-            sizes: '256x256',
-            type: 'image/png'
-          },
-          {
-            src: 'icons/icon-384x384.png',
-            sizes: '384x384',
-            type: 'image/png'
-          },
-          {
-            src: 'icons/icon-512x512.png',
-            sizes: '512x512',
-            type: 'image/png'
-          }
-        ]
+        icons: [{
+          src: 'icons/icon-128x128.png',
+          sizes: '128x128',
+          type: 'image/png'
+        }, {
+          src: 'icons/icon-192x192.png',
+          sizes: '192x192',
+          type: 'image/png'
+        }, {
+          src: 'icons/icon-256x256.png',
+          sizes: '256x256',
+          type: 'image/png'
+        }, {
+          src: 'icons/icon-384x384.png',
+          sizes: '384x384',
+          type: 'image/png'
+        }, {
+          src: 'icons/icon-512x512.png',
+          sizes: '512x512',
+          type: 'image/png'
+        }]
       }
     },
 

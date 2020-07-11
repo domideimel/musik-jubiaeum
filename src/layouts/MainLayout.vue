@@ -1,37 +1,22 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
+    <q-header class="bg-red-8 text-white" height-hint="98">
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="leftDrawerOpen = !leftDrawerOpen"
-        />
-
         <q-toolbar-title>
+          <q-avatar>
+            <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg">
+          </q-avatar>
           Negertalmusikanten
         </q-toolbar-title>
+        <q-space />
+        <q-btn-toggle
+          v-model="model"
+          flat stretch
+          toggle-color="yellow"
+          :options="navigation"
+        />
       </q-toolbar>
     </q-header>
-
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      bordered
-      content-class="bg-grey-1"
-    >
-      <q-list>
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        />
-      </q-list>
-    </q-drawer>
-
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -39,68 +24,31 @@
 </template>
 
 <script>
-import EssentialLink from 'components/EssentialLink.vue'
 
 export default {
   name: 'MainLayout',
-
-  components: {
-    EssentialLink
-  },
-
   data () {
     return {
-      leftDrawerOpen: false,
-      essentialLinks: [
-        {
-          title: 'Docs',
-          caption: 'quasar.dev',
-          icon: 'school',
-          link: 'https://quasar.dev'
-        },
-        {
-          title: 'Github',
-          caption: 'github.com/quasarframework',
-          icon: 'code',
-          link: 'https://github.com/quasarframework'
-        },
-        {
-          title: 'Discord Chat Channel',
-          caption: 'chat.quasar.dev',
-          icon: 'chat',
-          link: 'https://chat.quasar.dev'
-        },
-        {
-          title: 'Forum',
-          caption: 'forum.quasar.dev',
-          icon: 'record_voice_over',
-          link: 'https://forum.quasar.dev'
-        },
-        {
-          title: 'Twitter',
-          caption: '@quasarframework',
-          icon: 'rss_feed',
-          link: 'https://twitter.quasar.dev'
-        },
-        {
-          title: 'Facebook',
-          caption: '@QuasarFramework',
-          icon: 'public',
-          link: 'https://facebook.quasar.dev'
-        },
-        {
-          title: 'Quasar Awesome',
-          caption: 'Community Quasar projects',
-          icon: 'favorite',
-          link: 'https://awesome.quasar.dev'
-        }
-      ]
+      model: null,
+      navigation: [{
+        label: 'Home',
+        value: 'home'
+      }, {
+        label: 'Festablauf',
+        value: 'festablauf'
+      }, {
+        label: 'Chronik',
+        value: 'chronik'
+      }, {
+        label: 'Anmeldung',
+        value: 'anmeldung'
+      }]
     }
   }
 }
 </script>
 
-<style lang="sass" scoped>
+<style scoped lang="sass">
   .q-toolbar
     min-height: 80px !important
 </style>
