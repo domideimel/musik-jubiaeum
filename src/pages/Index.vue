@@ -1,81 +1,107 @@
 <template>
   <q-page padding>
     <hero />
-    <div class="row q-mb-lg" id="festablauf">
+    <div class="row q-mb-lg" id="festjahr">
       <div class="col col-12 col-md-8 offset-md-2 text-body1">
-        <h2>Festablauf</h2>
-        <timeline
-          :items="course"
-          :layout="layout"
-        />
+        <div class="row">
+          <div class="col col-12 col-md-8 offset-md-2">
+            <h2 class="text-center">Festjahr</h2>
+            <timeline
+              :items="course"
+              :layout="layout"
+            />
+          </div>
+        </div>
       </div>
     </div>
     <div class="row q-my-lg" id="chronik">
       <div class="col col-12 col-md-8 offset-md-2 text-body1">
-        <h2>Chronik</h2>
-        <p>
-          Einem alten Wunsch der Bevölkerung und besonders der Katholischen Kirchengemeinde entsprechend wurde im Jahre
-          1971 zum wiederholten Male der Versuch unternommen, in Siedlinghausen wieder ein Blasorchester zu gründen. Da
-          man nicht auf einen alten Spielerstamm zurückgreifen konnte - das letzte Blasorchester hatte sich 1935
-          aufgelöst - blieb nur die Möglichkeit, mit Jugendlichen einen völlig neuen Anfang zu machen. Mit wenigen
-          Instrumenten, die Pastor Ludwig noch seit dem letzten Versuch auf Lager hatte, mit viel Optimismus und
-          tatkräftiger, d. h. finanzieller und ideeller Unterstützung durch Pastor Ludwig, Anton Leiße, Ernst Steinrücke
-          und in besonderem Maße Georg Pieper und der Gemeindevertretung unter Bürgermeister Caspari begann Rektor Franz
-          Mickus mit dieser schwierigen Aufgabe. In einem Kellerraum der Grundschule wurden die ersten Proben
-          durchgeführt.
-        </p>
-        <p>
-          Spieler der ersten Stunde waren Rainer Hamann, Christoph Hanfland, Karl-Josef Hanfland, Hubertus Kräling,
-          Severin Lörwald, Karl-Udo Lütteken, Peter Mähler, Hubertus Plebs, Meinolf Rohleder, Reinhard Rohleder, Thomas
-          Rohleder und Bruno Stabaginski. Diese Gruppe hatte ihren ersten Auftritt beim Martinszug 1971, wobei
-          allerdings Lautstärke und Harmonie noch in einem ungesunden Verhältnis standen.
-        </p>
-        <p>
+        <div class="row">
+          <div class="col col-12 col-md-8 offset-md-2">
+            <h2 class="text-center">Chronik</h2>
+            <p>
+              Einem alten Wunsch der Bevölkerung und besonders der Katholischen Kirchengemeinde entsprechend wurde im
+              Jahre
+              1971 zum wiederholten Male der Versuch unternommen, in Siedlinghausen wieder ein Blasorchester zu gründen.
+              Da
+              man nicht auf einen alten Spielerstamm zurückgreifen konnte - das letzte Blasorchester hatte sich 1935
+              aufgelöst - blieb nur die Möglichkeit, mit Jugendlichen einen völlig neuen Anfang zu machen. Mit wenigen
+              Instrumenten, die Pastor Ludwig noch seit dem letzten Versuch auf Lager hatte, mit viel Optimismus und
+              tatkräftiger, d. h. finanzieller und ideeller Unterstützung durch Pastor Ludwig, Anton Leiße, Ernst
+              Steinrücke
+              und in besonderem Maße Georg Pieper und der Gemeindevertretung unter Bürgermeister Caspari begann Rektor
+              Franz
+              Mickus mit dieser schwierigen Aufgabe. In einem Kellerraum der Grundschule wurden die ersten Proben
+              durchgeführt.
+            </p>
+            <p>
+              Spieler der ersten Stunde waren Rainer Hamann, Christoph Hanfland, Karl-Josef Hanfland, Hubertus Kräling,
+              Severin Lörwald, Karl-Udo Lütteken, Peter Mähler, Hubertus Plebs, Meinolf Rohleder, Reinhard Rohleder,
+              Thomas
+              Rohleder und Bruno Stabaginski. Diese Gruppe hatte ihren ersten Auftritt beim Martinszug 1971, wobei
+              allerdings Lautstärke und Harmonie noch in einem ungesunden Verhältnis standen.
+            </p>
+            <p>
 
-          Es stellte sich aber bald heraus, dass man auf die Hilfe erfahrener Musiker nicht verzichten konnte, wollte
-          man die Gruppe von Einzelspielern zu einem Orchester formen. Als Ausbilder und Dirigenten halfen in den
-          folgenden Jahren:
-        </p>
-        <timeline
-          :items="conductor"
-          class="q-my-md"
-        />
-        <p>
-          Wegen der ständig wachsenden Aufgaben wurde ebenfalls die Gründung eines Musikvereins erforderlich. Hier muss
-          die Unterstützung durch den Schützenverein, insbesondere durch die Herren des Vorstandes, Herr Edmund Kräling,
-          Ludwig Schauerte und Josef Hagenhoff erwähnt werden. Spontan kam es nach einem Auftritt zu einer
-          Vereinsgründung mit zunächst folgenden Mitgliedern:
-        </p>
-        <p>
+              Es stellte sich aber bald heraus, dass man auf die Hilfe erfahrener Musiker nicht verzichten konnte,
+              wollte
+              man die Gruppe von Einzelspielern zu einem Orchester formen. Als Ausbilder und Dirigenten halfen in den
+              folgenden Jahren:
+            </p>
+            <timeline
+              :items="conductor"
+              class="q-my-md"
+            />
+            <p>
+              Wegen der ständig wachsenden Aufgaben wurde ebenfalls die Gründung eines Musikvereins erforderlich. Hier
+              muss
+              die Unterstützung durch den Schützenverein, insbesondere durch die Herren des Vorstandes, Herr Edmund
+              Kräling,
+              Ludwig Schauerte und Josef Hagenhoff erwähnt werden. Spontan kam es nach einem Auftritt zu einer
+              Vereinsgründung mit zunächst folgenden Mitgliedern:
+            </p>
+            <p>
 
-          Ewald Ludwig, Edmund Kräling, Karl Pieper, Josef Hagenhoff, Ulrich Brings, Frau Hamann, Johannes Brockmann,
-          Reinhard Leiße, Walter Wienand, Richard Hassenpflug, Hans Dickmann, Günter Rohleder, Josef Mähler, Johannes
-          Plebs, Walter Rohleder, Richard Scholz, Hubert Kräling, Karl Brockmann, Anton Teutenberg, Ludwig Schauerte,
-          Klaus Simon, Rolf Körner, Dr. Reinhardt und Bernhard Lütteken
+              Ewald Ludwig, Edmund Kräling, Karl Pieper, Josef Hagenhoff, Ulrich Brings, Frau Hamann, Johannes
+              Brockmann,
+              Reinhard Leiße, Walter Wienand, Richard Hassenpflug, Hans Dickmann, Günter Rohleder, Josef Mähler,
+              Johannes
+              Plebs, Walter Rohleder, Richard Scholz, Hubert Kräling, Karl Brockmann, Anton Teutenberg, Ludwig
+              Schauerte,
+              Klaus Simon, Rolf Körner, Dr. Reinhardt und Bernhard Lütteken
 
-        </p>
-        <p>
-          In einer Versammlung am 07.02.1974 wurde Frau Christa Hanfland zur ersten Vorsitzenden dieses Musikvereins
-          gewählt. Sie sorgte mit viel Eigeninitiative für die ersten Uniformen, blaue Kasacks, die auch beim 10
-          jährigen Jubiläum im Jahr 1981 noch getragen wurden. In den folgenden Jahren wuchs die Mitgliederzahl des
-          Musikvereins ständig. Ende 1978 beschloss die Generalversammlung eine neue Satzung und die Eintragung in das
-          Vereinsregister. Neuer Vorsitzender des Musikvereins wurde Josef Hagenhoff. Ihm zur Seite standen Werner
-          Brockmann, Walter Ritter, Kurt Herrmann, Birgit Hanfland, Reinhard Rohleder und Franz Mickus.
-        </p>
-        <p>
+            </p>
+            <p>
+              In einer Versammlung am 07.02.1974 wurde Frau Christa Hanfland zur ersten Vorsitzenden dieses Musikvereins
+              gewählt. Sie sorgte mit viel Eigeninitiative für die ersten Uniformen, blaue Kasacks, die auch beim 10
+              jährigen Jubiläum im Jahr 1981 noch getragen wurden. In den folgenden Jahren wuchs die Mitgliederzahl des
+              Musikvereins ständig. Ende 1978 beschloss die Generalversammlung eine neue Satzung und die Eintragung in
+              das
+              Vereinsregister. Neuer Vorsitzender des Musikvereins wurde Josef Hagenhoff. Ihm zur Seite standen Werner
+              Brockmann, Walter Ritter, Kurt Herrmann, Birgit Hanfland, Reinhard Rohleder und Franz Mickus.
+            </p>
+            <p>
 
-          Unter der Stabführung von Christoph Hanfland entwickelte sich das Orchester zu einem beachtlichen Klangkörper,
-          der aus dem Dorf- und Vereinsleben nicht mehr wegzudenken ist. Schwierig für den Dirigenten und den Verein
-          ist, dass viele Jugendliche Spieler nach der Schul- oder Berufsausbildung den Ort verlassen und dem Orchester
-          nicht mehr zur Verfügung stehen. So wurden allein bis zum 25 jährigen Jubiläum schon über 100 Spieler
-          ausgebildet.
-        </p>
+              Unter der Stabführung von Christoph Hanfland entwickelte sich das Orchester zu einem beachtlichen
+              Klangkörper,
+              der aus dem Dorf- und Vereinsleben nicht mehr wegzudenken ist. Schwierig für den Dirigenten und den Verein
+              ist, dass viele Jugendliche Spieler nach der Schul- oder Berufsausbildung den Ort verlassen und dem
+              Orchester
+              nicht mehr zur Verfügung stehen. So wurden allein bis zum 25 jährigen Jubiläum schon über 100 Spieler
+              ausgebildet.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="row q-my-lg" id="anmeldung">
       <div class="col col-12 col-md-8 offset-md-2">
-        <h2>Anmeldung</h2>
-        <contact-form />
+        <div class="row">
+          <div class="col col-12 col-md-8 offset-md-2">
+            <h2 class="text-center">Anmeldung</h2>
+            <contact-form />
+          </div>
+        </div>
       </div>
     </div>
   </q-page>

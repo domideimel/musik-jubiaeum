@@ -3,13 +3,16 @@
     <div class="row hero bg-red-8">
       <div class="col flex-center flex column items-center">
         <div class="q-py-xl">
-          <h1>50 Jahre</h1>
-          <h3>Negertalmusikanten</h3>
-          <p class="text-body1">
-            Uns gibt es schon 50 Jahre.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, consectetur
-            eos
-            in neque quam quis?
-          </p>
+          <h1
+            :class="isMobile && 'text-h2'"
+          >
+            50 Jahre
+          </h1>
+          <h3
+            :class="isMobile && 'text-h4'"
+          >
+            Negertalmusikanten e.V.
+          </h3>
           <q-btn class="q-mt-lg" flat round icon="keyboard_arrow_down" color="white" size="lg" />
         </div>
       </div>
@@ -23,18 +26,29 @@
 
 <script>
 export default {
-  name: 'Hero'
+  name: 'Hero',
+  computed: {
+    isMobile () {
+      return this.$q.screen.lt.md
+    }
+  }
 }
 </script>
 
 <style scoped lang="sass">
   #home
-    margin: -24px -24px 0 -24px
-    .hero
-      width: 100vw
+    margin: -8px -8px 0 -8px
+    @media (max-width: 1439px) and (min-width: 600px)
+      margin: -16px -16px 0 -16px
+    @media only screen and (min-width: $breakpoint-md)
+      margin: -24px -24px 0 -24px
 
     svg
-      margin: 0 -24px
+      margin: 0 -8px
+      @media (max-width: 1439px) and (min-width: 600px)
+        margin: 0 -16px
+      @media only screen and (min-width: $breakpoint-md)
+        margin: 0 -24px
       max-width: 100%
 
 </style>
