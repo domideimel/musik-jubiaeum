@@ -1,5 +1,5 @@
 <template>
-  <q-form @submit.prevent.stop="onSubmit" @reset.prevent.stop="onReset" class="q-gutter-md">
+  <q-form netlify @submit.prevent.stop="onSubmit" @reset.prevent.stop="onReset" class="q-gutter-md">
     <q-input outlined v-model="form.surname" label="Name" />
     <q-input outlined v-model="form.name" label="Nachname" />
     <q-input outlined v-model="form.street" label="Straße" />
